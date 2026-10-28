@@ -1,52 +1,35 @@
-# CodeIgniter 4 Application Starter
+# SKS-AISYIYAH 6 Candi (Sistem Keuangan Siswa)
 
-## What is CodeIgniter?
+Aplikasi web manajemen keuangan dan administrasi siswa untuk **TK Aisyiyah 6 Candi**, dibangun menggunakan framework **CodeIgniter 4** dan **MySQL**.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📖 Panduan Lengkap Instalasi & Penggunaan
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Untuk petunjuk lengkap mengenai:
+- Kebutuhan sistem dan ekstensi PHP
+- Langkah instalasi database & web server
+- Cara menjalankan program
+- Kredensial akun default (Admin & Siswa)
+- Panduan operasional fitur (SPP, DPP, Gaji Guru, dsb.)
+- Troubleshooting / pemecahan masalah
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Silakan baca file panduan utama:  
+👉 **[PANDUAN_INSTALASI_DAN_PENGGUNAAN.md](PANDUAN_INSTALASI_DAN_PENGGUNAAN.md)**
 
-## Installation & updates
+---
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## Ringkasan Cepat Menjalankan Aplikasi
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+1. Nyalakan **Apache** & **MySQL** di XAMPP Control Panel.
+2. Buat database `sks-aisyiyah` di `http://localhost/phpmyadmin` dan import file `sks-aisyiyah.sql`.
+3. Jalankan server lokal melalui terminal:
+   ```bash
+   php spark serve
+   ```
+4. Buka peramban di `http://localhost:8080`.
 
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+---
 
 ## Server Requirements
 
